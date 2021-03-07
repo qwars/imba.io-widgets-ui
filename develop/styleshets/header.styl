@@ -1,0 +1,29 @@
+header
+	display: flex
+	align-items: center
+	gap: 1rem
+	padding: 1rem
+	border-bottom: var( --border )
+	& > a
+		color: var( --color-extra )
+		text-decoration: none
+		display: inline-flex
+		align-items: flex-end
+		kbd
+			display: none
+		dfn
+			color: var( --color-extra )
+			text-indent: -1rem
+			padding-bottom: .5rem
+		img
+			width: 2rem
+	& > nav
+		flex-grow: 1
+		display: flex
+		grid-gap: 1rem
+		box-sizing: borderbox
+		a
+			font-weight: bold
+			white-space: nowrap
+			overflow: ellipsis
+			text-overflow: hidden

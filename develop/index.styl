@@ -5,14 +5,24 @@
 	--font-title: normal normal 400 normal 13px / normal -apple-system, "Segoe UI", system-ui, Roboto, "Noto Sans", "Helvetica Neue", sans-serfi
 	--font-extra: normal normal 400 normal 13px / normal -apple-system, "Segoe UI", system-ui, Roboto, "Noto Sans", "Helvetica Neue", sans-serfi
 
+
+@media (prefers-color-scheme: light)
+	@import './styleshets/light-scheme-theme.styl'
+
+@media (prefers-color-scheme: dark)
+	@import './styleshets/dark-scheme-theme.styl'
+
+@import './styleshets/default-tags-style.styl'
+
 html
 	min-height: 100%
 	margin: 0px
 	padding: 0px
 	height: 100%
-	@import './styleshets/root-light.styl'
+	&[data-theme="light"]
+		@import './styleshets/dark-scheme-theme.styl'
 	&[data-theme="dark"]
-		@import './styleshets/root-dark.styl'
+		@import './styleshets/dark-scheme-theme.styl'
 
 body
 	margin: 0px
@@ -41,16 +51,6 @@ body
 		background-color: white !important
 
 
-header
-	display: flex
-	align-items: center
-	gap: 1rem
-	& > nav
-		flex-grow: 1
-
-footer
-	display: flex
-	justify-content: center
-
-main
-	flex-grow: 1
+@import './styleshets/header.styl'
+@import './styleshets/footer.styl'
+@import './styleshets/main.styl'
