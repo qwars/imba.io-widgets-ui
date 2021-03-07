@@ -1,0 +1,39 @@
+
+
+:root
+	--font-text: normal normal 400 normal 13px / normal -apple-system, "Segoe UI", system-ui, Roboto, "Noto Sans", "Helvetica Neue", sans-serfi
+	--font-title: normal normal 400 normal 13px / normal -apple-system, "Segoe UI", system-ui, Roboto, "Noto Sans", "Helvetica Neue", sans-serfi
+	--font-extra: normal normal 400 normal 13px / normal -apple-system, "Segoe UI", system-ui, Roboto, "Noto Sans", "Helvetica Neue", sans-serfi
+
+html
+	min-height: 100%
+	margin: 0px
+	padding: 0px
+	height: 100%
+	@import './styleshets/root-light.styl'
+	&[data-theme="dark"]
+		@import './styleshets/root-dark.styl'
+
+body
+	margin: 0px
+	padding: 0px
+	font: var( --font-text )
+	min-height: 100vh
+	min-width: 642px
+	::selection
+		background: transparent
+		box-shadow: none
+		outline: 0px solid transparent
+	:focus
+		background: transparent
+		box-shadow: none
+		outline: 0px solid transparent
+	& > output
+		position: fixed
+		width: 100%
+		left: 0
+
+	::-internal-autofill-selected:hover,
+	::-internal-autofill-selected:focus,
+	::-internal-autofill-selected:active
+		background-color: white !important
