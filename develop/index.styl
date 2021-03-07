@@ -18,6 +18,8 @@ body
 	margin: 0px
 	padding: 0px
 	font: var( --font-text )
+	display: flex
+	flex-direction: column
 	min-height: 100vh
 	min-width: 642px
 	::selection
@@ -37,3 +39,18 @@ body
 	::-internal-autofill-selected:focus,
 	::-internal-autofill-selected:active
 		background-color: white !important
+
+
+header
+	display: flex
+	align-items: center
+	gap: 1rem
+	& > nav
+		flex-grow: 1
+
+footer
+	display: flex
+	justify-content: center
+
+main
+	flex-grow: 1
