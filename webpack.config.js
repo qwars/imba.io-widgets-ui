@@ -76,30 +76,30 @@ module.exports = {
                     }
                 }
             },
-            {
-                test: /images.+\.(jpe?g|png|gif|svg|ico)$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        useRelativePath: true,
-                        outputPath: 'images',
-                        publicPath: '/images'
-                    }
-                }]
-            },
-            {
-                test: /fonts.+\.(woff(2)?|ttf|eot|svg)([?#]+\w+)?$/,
-                use: [{
-                    loader: 'file-loader',
-                    options: {
-                        name: '[name].[ext]',
-                        useRelativePath: true,
-                        outputPath: 'fonts',
-                        publicPath: '/fonts'
-                    }
-                }]
-            },
+            // {
+            //     test: /images.+\.(jpe?g|png|gif|svg|ico)$/,
+            //     use: [{
+            //         loader: 'file-loader',
+            //         options: {
+            //             name: '[name].[ext]',
+            //             useRelativePath: true,
+            //             outputPath: 'images',
+            //             publicPath: '/images'
+            //         }
+            //     }]
+            // },
+            // {
+            //     test: /fonts.+\.(woff(2)?|ttf|eot|svg)([?#]+\w+)?$/,
+            //     use: [{
+            //         loader: 'file-loader',
+            //         options: {
+            //             name: '[name].[ext]',
+            //             useRelativePath: true,
+            //             outputPath: 'fonts',
+            //             publicPath: '/fonts'
+            //         }
+            //     }]
+            // },
             {
                 test: /\.svg/,
                 type: 'asset/resource',
