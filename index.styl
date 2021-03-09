@@ -1,0 +1,81 @@
+
+
+file(name, ext, path)
+	path + '/' + name + '.' + ext
+
+font-face(family, font=family, path='fonts', weight='normal', style='normal', display='auto')
+	@font-face
+		font-family family
+		src url(file(font, 'eot', path))
+		src url(file(font, 'eot?#iefix', path)) format("embedded-opentype"),
+			url(file(font, 'woff', path)) format("woff"),
+			url(file(font, 'ttf', path)) format("truetype")
+		font-weight weight
+		font-style style
+		font-display display
+
+font-face( 'Qwars Symbols', 'QwarsSymbols-Regular', './' )
+
+.iq
+	font-family: "Qwars Symbols"
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	-moz-osx-font-smoothing: grayscale
+	-webkit-font-smoothing: antialiased
+	text-rendering: auto
+
+.iq-spin
+	-webkit-animation: iq-spin 2s infinite linear
+	animation: iq-spin 2s infinite linear
+
+.iq-pulse
+	-webkit-animation: iq-spin 1s infinite steps(8)
+	animation: iq-spin 1s infinite steps(8)
+
+@keyframes iq-spin
+	0%
+		-webkit-transform: rotate(0deg)
+		transform: rotate(0deg)
+	100%
+		-webkit-transform: rotate(360deg)
+		transform: rotate(360deg)
+
+.iq-rotate-90
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)"
+	-webkit-transform: rotate(90deg)
+	transform: rotate(90deg)
+
+.iq-rotate-180
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"
+	-webkit-transform: rotate(180deg)
+	transform: rotate(180deg)
+
+.iq-rotate-270
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)"
+	-webkit-transform: rotate(270deg)
+	transform: rotate(270deg)
+
+.iq-flip-horizontal
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)"
+	-webkit-transform: scale(-1, 1)
+	transform: scale(-1, 1)
+
+.iq-flip-vertical
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)"
+	-webkit-transform: scale(1, -1)
+	transform: scale(1, -1)
+
+.iq-flip-both, .iq-flip-horizontal.iq-flip-vertical
+	-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)"
+	-webkit-transform: scale(-1, -1)
+	transform: scale(-1, -1)
+
+:root .iq-rotate-90,
+:root .iq-rotate-180,
+:root .iq-rotate-270,
+:root .iq-flip-horizontal,
+:root .iq-flip-vertical,
+:root .iq-flip-both
+	-webkit-filter: none
+	filter: none

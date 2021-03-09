@@ -1,0 +1,151 @@
+SplineFontDB: 3.2
+FontName: QwarsSymbos-Regular
+FullName: Qwars Symbos
+FamilyName: Qwars Symbos
+Weight: Regular
+Copyright: Copyright (c) 2021, Alexandr Selunin
+UComments: "2021-3-8: Created with FontForge (http://fontforge.org)"
+Version: 001.000
+ItalicAngle: 0
+UnderlinePosition: -25.088
+UnderlineWidth: 12.8
+Ascent: 448
+Descent: 64
+InvalidEm: 0
+sfntRevision: 0x00010000
+LayerCount: 2
+Layer: 0 0 "+BBcEMAQ0BD0EOAQ5 +BD8EOwQwBD0A" 1
+Layer: 1 0 "+BB8ENQRABDUENAQ9BDgEOQAA +BD8EOwQwBD0A" 0
+XUID: [1021 872 390242198 1830360]
+StyleMap: 0x0000
+FSType: 0
+OS2Version: 3
+OS2_WeightWidthSlopeOnly: 0
+OS2_UseTypoMetrics: 1
+CreationTime: 1615207208
+ModificationTime: 1615253719
+PfmFamily: 17
+TTFWeight: 400
+TTFWidth: 5
+LineGap: 24
+VLineGap: 0
+Panose: 2 0 5 3 0 0 0 0 0 0
+OS2TypoAscent: 459
+OS2TypoAOffset: 0
+OS2TypoDescent: -33
+OS2TypoDOffset: 0
+OS2TypoLinegap: 24
+OS2WinAscent: 236
+OS2WinAOffset: 0
+OS2WinDescent: 33
+OS2WinDOffset: 0
+HheadAscent: 229
+HheadAOffset: 0
+HheadDescent: -33
+HheadDOffset: 0
+OS2SubXSize: 170
+OS2SubYSize: 183
+OS2SubXOff: 0
+OS2SubYOff: 36
+OS2SupXSize: 170
+OS2SupYSize: 183
+OS2SupXOff: 0
+OS2SupYOff: 125
+OS2StrikeYSize: 13
+OS2StrikeYPos: 68
+OS2CapHeight: 216
+OS2XHeight: 161
+OS2Vendor: 'PfEd'
+MarkAttachClasses: 1
+DEI: 91125
+LangName: 1033
+GaspTable: 1 65535 2 0
+Encoding: UnicodeFull
+UnicodeInterp: none
+NameList: AGL For New Fonts
+DisplaySize: -48
+AntiAlias: 1
+FitToEm: 0
+WinInfo: 128172 22 20
+BeginPrivate: 0
+EndPrivate
+TeXData: 1 0 0 177167 88584 59056 0 536871 59056 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
+BeginChars: 1114112 2
+
+StartChar: u1F50D
+Encoding: 128269 128269 0
+Width: 512
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+507.75 -21 m 2
+ 513.75 -26 513.75 -32 507.75 -38 c 2
+ 485.75 -60 l 2
+ 479.75 -66 473.75 -66 468.75 -60 c 2
+ 347.75 61 l 2
+ 344.75 64 343.75 66 343.75 69 c 2
+ 343.75 83 l 1
+ 304.75 49 258.75 32 207.75 32 c 0
+ 150.75 32 101.75 52 60.75 93 c 128
+ 19.75 134 -0.25 183 -0.25 240 c 128
+ -0.25 297 19.75 346 60.75 387 c 128
+ 101.75 428 150.75 448 207.75 448 c 128
+ 264.75 448 313.75 428 354.75 387 c 128
+ 395.75 346 415.75 297 415.75 240 c 0
+ 415.75 189 398.75 143 364.75 104 c 1
+ 378.75 104 l 2
+ 381.75 104 384.75 103 386.75 100 c 2
+ 507.75 -21 l 2
+207.75 80 m 128
+ 251.75 80 289.75 96 320.75 127 c 128
+ 351.75 158 367.75 196 367.75 240 c 128
+ 367.75 284 351.75 322 320.75 353 c 128
+ 289.75 384 251.75 400 207.75 400 c 128
+ 163.75 400 125.75 384 94.75 353 c 128
+ 63.75 322 47.75 284 47.75 240 c 128
+ 47.75 196 63.75 158 94.75 127 c 128
+ 125.75 96 163.75 80 207.75 80 c 128
+EndSplineSet
+Comment: "search find right-pointing"
+EndChar
+
+StartChar: u1F50E
+Encoding: 128270 128270 1
+Width: 512
+Flags: HW
+LayerCount: 2
+Fore
+SplineSet
+4.25 -21 m 6
+ -1.75 -26 -1.75 -32 4.25 -38 c 6
+ 26.25 -60 l 6
+ 32.25 -66 38.25 -66 43.25 -60 c 6
+ 164.25 61 l 6
+ 167.25 64 168.25 66 168.25 69 c 6
+ 168.25 83 l 5
+ 207.25 49 253.25 32 304.25 32 c 4
+ 361.25 32 410.25 52 451.25 93 c 132
+ 492.25 134 512.25 183 512.25 240 c 132
+ 512.25 297 492.25 346 451.25 387 c 132
+ 410.25 428 361.25 448 304.25 448 c 132
+ 247.25 448 198.25 428 157.25 387 c 132
+ 116.25 346 96.25 297 96.25 240 c 4
+ 96.25 189 113.25 143 147.25 104 c 5
+ 133.25 104 l 6
+ 130.25 104 127.25 103 125.25 100 c 6
+ 4.25 -21 l 6
+304.25 80 m 132
+ 260.25 80 222.25 96 191.25 127 c 132
+ 160.25 158 144.25 196 144.25 240 c 132
+ 144.25 284 160.25 322 191.25 353 c 132
+ 222.25 384 260.25 400 304.25 400 c 132
+ 348.25 400 386.25 384 417.25 353 c 132
+ 448.25 322 464.25 284 464.25 240 c 132
+ 464.25 196 448.25 158 417.25 127 c 132
+ 386.25 96 348.25 80 304.25 80 c 132
+EndSplineSet
+Comment: "search find left-pointing"
+EndChar
+EndChars
+EndSplineFont
