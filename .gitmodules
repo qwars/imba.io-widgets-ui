@@ -1,0 +1,4 @@
+[submodule "develop/styleshets/icons"]
+	path = develop/styleshets/icons
+	url = git@github.com:qwars/imba.io-widgets-ui
+	branch = IconsStyleSheets
