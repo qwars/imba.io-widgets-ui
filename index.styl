@@ -8,6 +8,7 @@ font-face(family, font=family, path='fonts', weight='normal', style='normal', di
 		font-family family
 		src url(file(font, 'eot', path))
 		src url(file(font, 'eot?#iefix', path)) format("embedded-opentype"),
+			url(file(font, 'svg', path)) format("svg"),
 			url(file(font, 'woff', path)) format("woff"),
 			url(file(font, 'ttf', path)) format("truetype")
 		font-weight weight
@@ -24,6 +25,15 @@ font-face( 'Qwars Symbols', 'QwarsSymbols-Regular', './' )
 	-moz-osx-font-smoothing: grayscale
 	-webkit-font-smoothing: antialiased
 	text-rendering: auto
+	font-style: normal
+	&.input
+		border: 1px solid currentColor
+		border-radius: .2rem
+		padding: .1rem .3rem .1rem 1.2rem
+		box-sizing: border-box
+	&.small
+		font-size: 80%
+		line-height: 140%
 
 .iq-spin
 	-webkit-animation: iq-spin 2s infinite linear
@@ -79,3 +89,5 @@ font-face( 'Qwars Symbols', 'QwarsSymbols-Regular', './' )
 :root .iq-flip-both
 	-webkit-filter: none
 	filter: none
+
+@import './icons.styl'

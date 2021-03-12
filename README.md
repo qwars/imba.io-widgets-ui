@@ -8,6 +8,15 @@ The Ultimate UI Component Library for Imba
 ```
 fontforge --quiet -c 'open(argv[1]).generate(argv[2])' QwarsSymbols-Regular.sfd QwarsSymbols-Regular.ttf
 fontforge --quiet -c 'open(argv[1]).generate(argv[2])' QwarsSymbols-Regular.sfd QwarsSymbols-Regular.woff
+fontforge --quiet -c 'open(argv[1]).generate(argv[2])' QwarsSymbols-Regular.sfd QwarsSymbols-Regular.svg
+```
+
+WOFF2 file
+
+sudo apt install woff2
+
+```
+woff2_compress QwarsSymbols-Regular.ttf
 ```
 
 EOT file
