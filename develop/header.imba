@@ -9,12 +9,12 @@ export tag Sketch < header
 
 	def render
 		<self>
+			<kbd :click.toggleNavigation> <i.iq.bars>
 			<a route-to="/">
 				<span>
 					<i.iq.ir-teamspeak>
 					<i> <img src=logoQwars>
 				<dfn> "Work for yourself"
-				<kbd :click.toggleNavigation> <i.iq.ir-bars>
 			<nav>
 				<a route-to="/themes"> "Themes UI"
 				<a route-to="/settings"> "Settings UI"

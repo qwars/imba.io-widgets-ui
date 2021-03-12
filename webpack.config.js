@@ -101,7 +101,7 @@ module.exports = {
             //     }]
             // },
             {
-                test: /\.(woff(2)?|ttf|eot|svg)([?#]+\w+)?$/,
+                test: /\.(woff(2)?|ttf|sfd|eot|svg)([?#]+\w+)?$/,
                 type: 'asset/resource',
             },
             {

@@ -30,8 +30,12 @@ tag ArticlePage < article
 			<SnippetsArticle route="/snippets/*:document*/*:field*">
 
 tag NavigationPage < nav
+	def toggleNavigation
+		application.main-nav-open = not application.main-nav-open
+
 	def render
 		<self>
+			<aside>
 			<PagesNav route="/*$">
 			<ThemesNav route="/themes/*:document*/*:field*">
 			<SettingsNav route="/settings/*:document*/*:field*">
@@ -39,13 +43,15 @@ tag NavigationPage < nav
 			<BlocksNav route="/blocks/*:document*/*:field*">
 			<IconsNav route="/icons/*:document*/*:field*">
 			<SnippetsNav route="/snippets/*:document*/*:field*">
+			<kbd :click.toggleNavigation><i.iq.bars>
+
 
 export tag Sketch < main
 	@classes = []
 
 	def render
 		<self>
-			<NavigationPage attr:open=application.main-nav-open route="/:collection/*:document*/*:field*">
+			<NavigationPage@navigation .open=application.main-nav-open route="/:collection/*:document*/*:field*">
 			<PagesNav attr:open=application.main-nav-open route="/*$">
 			<ArticlePage route="/:collection/*:document*/*:field*">
 			<PagesArticle route="/*$">
