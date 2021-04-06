@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Bringing data Scheme.org as js class",
   "main": "index.js",
-  "repository": "git@github.com:qwars/imba.io-widgets-ui.git#ClassSchemeOrg",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/qwars/imba.io-widgets-ui/tree/ClassSchemeOrg"
+    },
   "author": "Александр Селюнин <aka.qwars@gmail.com>",
   "license": "MIT",
   "private": true
