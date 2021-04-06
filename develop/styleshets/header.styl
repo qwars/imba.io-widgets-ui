@@ -27,3 +27,10 @@ header
 			white-space: nowrap
 			overflow: ellipsis
 			text-overflow: hidden
+
+	@media (orientation: portrait)
+		& > a > dfn
+			display: none
+	@media (orientation: landscape)
+		& > kbd:first-child
+			display: none

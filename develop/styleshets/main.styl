@@ -14,11 +14,17 @@ main
 	border-right: var(--border)
 	// width: 3rem
 	transition: width .3s ease-in-out
+	// @media (orientation: portrait)
+	// 	margin-left: -3rem
+
 	& > kbd
 		width: 3rem
 		height: 3rem
 		font-size: 2rem
 		grid-area: 1/1/2/2
+		@media (orientation: portrait)
+			&
+				display: none
 	:empty + kbd
 		display: none
 		width: 0px
