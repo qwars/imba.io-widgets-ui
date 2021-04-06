@@ -2,3 +2,7 @@
 	path = develop/styleshets/icons
 	url = git@github.com:qwars/imba.io-widgets-ui
 	branch = IconsStyleSheets
+[submodule "develop/pages/settings/scheme-org-ld/scheme-org-datastate"]
+	path = develop/pages/settings/scheme-org-ld/scheme-org-datastate
+	url = git@github.com:qwars/imba.io-widgets-ui
+	branch = ClassSchemeOrg
