@@ -17,6 +17,15 @@ font-face(family, font=family, path='fonts', weight='normal', style='normal', di
 
 font-face( 'Qwars Symbols', 'QwarsSymbols-Regular', './' )
 
+position-full()
+	position: arguments
+	top: 0px
+	left: 0px
+	right: 0px
+	bottom: 0px
+	margin: auto
+
+
 .iq
 	font-family: "Qwars Symbols"
 	display: inline-flex
@@ -34,6 +43,19 @@ font-face( 'Qwars Symbols', 'QwarsSymbols-Regular', './' )
 	&.small
 		font-size: 80%
 		line-height: 140%
+	&.circle, &.square, &.field
+		min-width: 1.1542em
+		min-height: 1em
+		display: flex
+		align-items: center
+		justify-content: center
+		border: .05em solid currentColor
+	&.circle
+		border-radius: 50%
+	&.field
+		border-radius: .15em
+		padding-left: 1em
+
 
 .iq-spin
 	-webkit-animation: iq-spin 2s infinite linear
@@ -45,10 +67,8 @@ font-face( 'Qwars Symbols', 'QwarsSymbols-Regular', './' )
 
 @keyframes iq-spin
 	0%
-		-webkit-transform: rotate(0deg)
 		transform: rotate(0deg)
 	100%
-		-webkit-transform: rotate(360deg)
 		transform: rotate(360deg)
 
 .iq-rotate-90
