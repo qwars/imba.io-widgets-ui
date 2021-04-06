@@ -1,0 +1,71 @@
+
+/**/
+
+.SchemeColors
+	padding: 1rem
+	& > div
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-gap: 1rem
+		gap: 1rem
+		ul.dark-theme
+			--title-color: #EAEAED
+			--text-color: #CCCCCF;
+			--extra-color: #9C9C9E
+
+			--link-color: rgb(0 131 143)
+			--active-color: rgb(0 172 193)
+			--hover-color: rgb(0 96 100)
+			--visited-color: rgb(35, 49, 59)
+
+			--focus-color: rgb(0 160 210)
+			--checked-color: rgb(2 163 136)
+
+			--canvas-color: rgb( 0, 5%, 0 )
+			--r-color: rgb(178, 74, 33)
+			--b-color: rgb(31, 65, 118)
+			--g-color: rgb(111, 164, 30)
+			--border-color: rgb(92,111,124)
+
+			--disabled-color: rgba(255,255,255 .15)
+			--invalid-color: rgb(242 98 33)
+			--info-color: rgb(187 222 251)
+			--warning-color: rgb(255 205 26)
+
+			background: var( --canvas-color )
+			color: var( --text-color )
+			padding: 0px 1rem
+
+	hr
+		height: 1px
+		border: 0px solid transparent
+		display: flex
+		align-items: center
+		overflow: visible
+		padding: 0px 1em
+		background: ButtonText
+		color: Highlight
+		margin: 2rem 0px
+		legend
+			padding: 0px 1rem
+			background: Canvas
+			font-weight: bolder
+			font-size: 1.15em
+			cursor: pointer
+			color: LinkText
+
+	ul
+		margin: 0px
+		padding: 0px
+		li
+			display: flex
+			margin: 1rem 0px
+			grid-gap: 1rem
+			gap: 1rem
+			align-items: center
+			& > div
+				width: 3rem
+				height: 3rem
+				border: .05em dashed currentColor
+				&:not([style])
+					background-image: url( "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0%25' y1='100%25' x2='100%25' y2='0%25' stroke='lightgray' /%3E%3C/svg%3E" )

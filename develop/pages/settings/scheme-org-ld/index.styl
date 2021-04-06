@@ -1,0 +1,64 @@
+
+.SchemeOrgState
+	margin: 1rem
+	ul
+		list-style: none
+		margin: 0px
+		padding: 0px
+	& > ul
+		display: flex
+		flex-wrap: wrap
+		gap: 1rem
+		.ListItemType
+			display: flex
+			justify-content: space-between
+			min-height: 2rem
+			align-items: center
+			gap: 1rem
+		& > li.ListItemType
+			display: flex
+			justify-content: center
+			align-items: flex-start
+			padding: 1rem .369rem
+			background: var( --disabled-color )
+			color: var( --title-color )
+			& > span
+				writing-mode: vertical-lr
+				font-size: 1rem
+				font-weight: bolder
+			& > kbd
+				align-self: flex-end
+				margin-left: -2.3rem
+		.ListItemTypeSub
+			padding-top: 1rem
+		.ListItemPropertes
+			flex-grow: 1
+		.ListItemTypeHr
+			hr
+				height: 1px
+				border: 0px solid transparent
+				display: flex
+				align-items: center
+				overflow: visible
+				padding: 0px 1em
+				background: var( --border-color )
+				color: var( --link-color )
+				legend
+					padding: 0px 1rem
+					background: var( --background, Canvas )
+					font-weight: bolder
+					font-size: 1.15em
+					cursor: pointer
+				&:hover
+					color: var( --hover-color )
+			li
+				gap: 1rem
+				margin: 0px 2rem
+				span + span
+					flex-grow: 1
+					display: flex
+					justify-content: flex-end
+					gap: 1rem
+			&:not(:only-child ) hr.close + ul
+				height: 0px
+				overflow: hidden

@@ -1,4 +1,6 @@
 
+import Sketch as CheckboxArticle from './checkbox'
+
 export tag Aside < section
 	def render
 		<self>
@@ -46,3 +48,4 @@ export tag Nav < ul
 export tag Section < section
 	def render
 		<self>
+			<CheckboxArticle route="/form-fields/checkbox">

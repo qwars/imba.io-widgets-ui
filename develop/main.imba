@@ -1,4 +1,7 @@
 
+const Pg = require './pages'
+
+
 import Section as PagesArticle, Nav as PagesNav, Aside as PagesAside  from './pages'
 import Section as ThemesArticle, Nav as ThemesNav, Aside as ThemesAside  from './pages/themes'
 import Section as SettingsArticle, Nav as SettingsNav, Aside as SettingsAside  from './pages/settings'
@@ -18,7 +21,7 @@ tag AsidePage < aside
 			<IconsAside route="/icons/*:document*/*:field*">
 			<SnippetsAside route="/snippets/*:document*/*:field*">
 
-tag ArticlePage < article
+tag ArticlePage < section
 	def render
 		<self>
 			<PagesArticle route="/*$">
@@ -51,7 +54,7 @@ export tag Sketch < main
 
 	def render
 		<self>
-			<NavigationPage@navigation .open=application.main-nav-open route="/:collection/*:document*/*:field*">
+			<NavigationPage .open=application.main-nav-open route="/:collection/*:document*/*:field*">
 			<PagesNav attr:open=application.main-nav-open route="/*$">
 			<ArticlePage route="/:collection/*:document*/*:field*">
 			<PagesArticle route="/*$">

@@ -1,22 +1,24 @@
+:root
+	--border: 1px solid var( --border-color )
 
 a
 	text-decoration: none
-	color: var( --color-link )
+	color: var( --link-color )
 	&.active, &:active
-		color: var( --color-link-active )
-	&:hover
-		color: var( --color-link-hover )
+		color: var( --active-color )
+	&:not(.active):hover
+		color: var( --hover-color )
 
 kbd
 	display: inline-flex
 	align-items: center
 	justify-content: center
-	color: var( --color-extra )
+	color: var( --extra-color )
 	cursor: pointer
 	&:hover
-		color: var( --color-text )
+		color: var( --text-color )
 	&:active
-		color: var( --color-title )
+		color: var( --title-color )
 
 abbr
 	display: inline-flex
